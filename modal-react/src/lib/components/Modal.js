@@ -29,3 +29,5 @@ function Modal(props) {
 }
 
 export default Modal;
+
+console.log('test');

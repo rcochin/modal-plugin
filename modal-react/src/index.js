@@ -10,7 +10,7 @@ function App() {
     <div>
       <button onClick={() => setIsOpen(true)}>Open Modal</button>
       
-      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} autoClose={false} color={'red'} border={'20px'}>
+      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} autoClose={false} >
         Hello, I'm a modal!
       </Modal>
     </div>
