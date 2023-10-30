@@ -6,34 +6,14 @@ A library of React components created using `create-react-app`.
 
 Run the following command:
 
-\`\`\`bash
 npm install "@r.cochin/modal-react"
-\`\`\`
 
 ## Usage
 
 To use the `Modal` component in your React application, you can import it as shown below:
 
-\`\`\`jsx
 import Modal from '@r.cochin/modal-react';
-\`\`\`
 
-### Modal Component
-
-The `Modal` component is designed to be simple yet flexible. Here's an example of how to use it:
-
-\`\`\`jsx
-<Modal 
-  isOpen={true} 
-  autoClose={true} 
-  autoCloseDuration={3000} 
-  onClose={() => console.log("Modal Closed")} 
-  color="lightgray" 
-  border="10px"
->
-  <h1>Hello, World!</h1>
-</Modal>
-\`\`\`
 
 #### Parameters
 
@@ -54,34 +34,3 @@ Here are the props you can pass to the `Modal` component:
 #### Callbacks
 
 - `onClose`: This function is called when the modal is closed. Useful for performing actions like resetting form states or logging.
-
-### Example
-
-Here's a more detailed example:
-
-\`\`\`jsx
-const App = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
-
-  const handleClose = () => {
-    setIsOpen(false);
-    console.log("Modal closed");
-  };
-
-  return (
-    <div>
-      <button onClick={() => setIsOpen(true)}>Open Modal</button>
-      <Modal 
-        isOpen={isOpen} 
-        autoClose={true} 
-        autoCloseDuration={5000} 
-        onClose={handleClose}
-        color="lightblue"
-        border="10px"
-      >
-        <h1>Hello, World!</h1>
-      </Modal>
-    </div>
-  );
-};
-\`\`\`
